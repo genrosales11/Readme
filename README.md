@@ -16,30 +16,36 @@ Table of Contents
 6. Email
 7. License
 
-Description
+-Description:
 This template allows users to answer a series of questions through the command line in their terminal to rapidly create a ReadMe file
 
-To install run the following command:
+-To install run the following command:
+
 open your terminal
 npm i
 
 
-Contributing
+-Contributing:
+
 Contact me for future contributions genrosales11@gmail.com
 
-Tests
+-Tests:
+
 To run tests, run the following command:
 
 npm test
 
-GitHub Username
+-GitHub Username:
+
 genrosales11
 https://github.com/genrosales11/Readme
 
-Email
+-Email:
+
 genrosales11@gmail.com
 
-License
+-License:
+
 licensed under the MIT license.
 
 
