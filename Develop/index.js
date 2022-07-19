@@ -53,7 +53,7 @@ const questions =
         name: "license",
         choices: [
             "MIT",
-            "ISC",
+            "ISC"
         ],
     },
 
@@ -67,46 +67,66 @@ inquirer.prompt(questions).then((response)=> {
         response.license = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
     }
 
-    const template = `# ${title}
-    ${license}
-    * [Description](#description)
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Contribution](#contribution)
-    * [Test](#test)
-    * [Questions](#Questions)
-    * [License](#license)
-    # Description
-    ${description}
-    # Installation
-    ${installation}
-    # Usage
-    ${usage}
-    # Contribution
-    ${contribution}
-    # Test
-    ${test}
-    https://github.com/${user}
-    # Questions
-    Contact me with any questions here
-    My email: ${email}
-    Visit my github: https://github.com/${user}
-    # License
-    ${detail}
-    `;
+    const result = `
+    # ${response.project}
+    #### Github: ${response.github}
+
+   //  Video walkthrough //
+
+    ### Screenshot of end product:
+   // ![)
+
+    ## Table of Contents
+
+    1. [Github](#github)
+
+    2. [Email](#email)
+
+    3. [Description](#description)
+
+    4. [License](#license)
+
+    5. [Install](#install)
+
+    6. [Testing](#test)
+
+    7. [Repo](#repo)
+
+    8. [Contribution](#contribution)
+       
+    ## Description: 
+    ${response.description}
+            
+    ## Installation commands required:
+    Use the following code in your code for installation:
+    \`\`\`    
+    - ${response.install}
+    \`\`\`
+    ## Testing information
+    ${response.test}
+    ## Repo
+    ${response.repo}
+    ##### Licensed with:
+    ${response.license}
+    ## Contributor:
+    ${response.contribution}
+    ## Email
+    You can contact the creator with questions regarding the generator at ${response.email}
+    `
     
-        // starts and sends data to function
-        createReadMe(template);
-    }
-    );
+   
     
-    // creates README with dynamic inputs based off users desires.
-    function createReadMe(template) {
-    
-        fs.writeFile("README.md", template, function (err) {
-            if (err) throw err, console.log("An error has stopped the file from being saved");
-            console.log("Data Saved");
-        });
-    
-    }
-module.exports - generateMarkdown
+   
+    fs.writeFile("README.md", result, (err) =>
+    err ? console.log(err) : console.log('Success!'))
+
+  }
+  )
+  
+  function generateMarkdown(data) {
+    return `# ${data.title}
+  
+  `;
+  }
+  
+  module.exports = generateMarkdown;
