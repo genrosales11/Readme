@@ -1,11 +1,12 @@
 
-    # undefined
-    #### Github: undefined
+    
+    #### Github: https://github.com/genrosales11/Readme
 
-   //  Video walkthrough //
+   #Video: https://drive.google.com/file/d/1ZLZb9HQn3iHuiIaAOPExyzabyC1WqNZk/view
 
     ### Screenshot of end product:
-   // ![)
+   <img width="591" alt="Readmescreenshot JPG" src="https://user-images.githubusercontent.com/107210172/179666103-ebcc0574-84c5-4d06-ab13-dbb90e26facc.png">
+
 
     ## Table of Contents
 
@@ -21,26 +22,21 @@
 
     6. [Testing](#test)
 
-    7. [Repo](#repo)
-
-    8. [Contribution](#contribution)
+    7. [Contribution](#contribution)
        
     ## Description: 
     Template allows user to answer a series of questions through the command line in their terminal to create a ReadMe file
             
     ## Installation commands required:
-    Use the following code in your code for installation:
-    ```    
-    - undefined
-    ```
+    open terminal -npm inquirer   
+   
     ## Testing information
-    instructions here
-    ## Repo
-    undefined
+    N/A
+    
     ##### Licensed with:
-    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+    MIT license
     ## Contributor:
     Genesis Rosales
     ## Email
-    You can contact the creator with questions regarding the generator at genrosalex11@hmail.cs
+    genesisrosales11@gmail.com
     
