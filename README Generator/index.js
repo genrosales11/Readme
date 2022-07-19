@@ -22,11 +22,7 @@ const questions =
         message: "Installation instructions for the project:",
         name: "installation",
     },
-    {
-        type: "input",
-        message: "Usage information for the project:",
-        name: "usage",
-    },
+  
     {
         type: "input",
         message: "Contribution guidelines for the project:",
@@ -70,11 +66,11 @@ inquirer.prompt(questions).then((response)=> {
     const result = `
     # ${response.project}
     #### Github: ${response.github}
-
-   //  Video walkthrough //
+   Video https://drive.google.com/file/d/1ZLZb9HQn3iHuiIaAOPExyzabyC1WqNZk/view?usp=sharing
+   
 
     ### Screenshot of end product:
-   // ![)
+    ![](./Readmescreenshot.JPG.png)
 
     ## Table of Contents
 
