@@ -1,11 +1,11 @@
 
     # undefined
     #### Github: undefined
-
+   Video https://drive.google.com/file/d/1ZLZb9HQn3iHuiIaAOPExyzabyC1WqNZk/view?usp=sharing
    
 
     ### Screenshot of end product:
-   
+    ![](./Readmescreenshot.JPG.png)
 
     ## Table of Contents
 
@@ -26,7 +26,7 @@
     8. [Contribution](#contribution)
        
     ## Description: 
-    This application creates a professional README file
+    This application will generate a README file
             
     ## Installation commands required:
     Use the following code in your code for installation:
