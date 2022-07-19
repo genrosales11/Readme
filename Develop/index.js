@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown");
 // TODO: Create an array of questions for user input
 const questions =
 
@@ -59,13 +60,11 @@ const questions =
 ]
 inquirer.prompt(questions).then((response)=> {
 
-    if (license === "MIT") {
-        detail = `This application is covered by the ${license} license.`
-        license = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    if (response.license === 'ISC') {
+        response.license = '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
     }
-    if (license === "ISC") {
-        detail = `This application is covered by the ${license} license.`
-        license = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)"
+    if (response.license === 'MIT') {
+        response.license = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
     }
 
     const template = `# ${title}
@@ -110,3 +109,4 @@ inquirer.prompt(questions).then((response)=> {
         });
     
     }
+module.exports - generateMarkdown
